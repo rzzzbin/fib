@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><structure type="editor_panel">
+	<structure type="transition_graph">
+		<structure mode="Default mode" type="fsa">
+			<structure type="state_set">
+				<state>
+					<name>fib n</name>
+					<id>0</id>
+				</state>
+				<state>
+					<name>fib n-1</name>
+					<id>1</id>
+				</state>
+				<state>
+					<name>fib n-2</name>
+					<id>2</id>
+				</state>
+				<state>
+					<name>onderaan bij 0</name>
+					<id>4</id>
+				</state>
+				<state>
+					<name>onderaan bij 1</name>
+					<id>5</id>
+				</state>
+			</structure>
+			<structure type="final_states"/>
+			<structure type="start_state"/>
+			<structure type="input_alph">
+				<symbol>-</symbol>
+				<symbol>0</symbol>
+				<symbol>1</symbol>
+				<symbol>2</symbol>
+				<symbol>=</symbol>
+				<symbol>b</symbol>
+				<symbol>f</symbol>
+				<symbol>i</symbol>
+				<symbol>n</symbol>
+			</structure>
+			<structure type="transition_set">
+				<fsa_trans>
+					<input>fibn-1</input>
+					<from>
+						<name>fib n</name>
+						<id>0</id>
+					</from>
+					<to>
+						<name>fib n-1</name>
+						<id>1</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>fibn-2</input>
+					<from>
+						<name>fib n</name>
+						<id>0</id>
+					</from>
+					<to>
+						<name>fib n-2</name>
+						<id>2</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>n=0</input>
+					<from>
+						<name>fib n</name>
+						<id>0</id>
+					</from>
+					<to>
+						<name>onderaan bij 0</name>
+						<id>4</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>n=1</input>
+					<from>
+						<name>fib n</name>
+						<id>0</id>
+					</from>
+					<to>
+						<name>onderaan bij 1</name>
+						<id>5</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>n-1</input>
+					<from>
+						<name>fib n-1</name>
+						<id>1</id>
+					</from>
+					<to>
+						<name>fib n</name>
+						<id>0</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>n-2</input>
+					<from>
+						<name>fib n-2</name>
+						<id>2</id>
+					</from>
+					<to>
+						<name>fib n</name>
+						<id>0</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>0</input>
+					<from>
+						<name>onderaan bij 0</name>
+						<id>4</id>
+					</from>
+					<to>
+						<name>fib n</name>
+						<id>0</id>
+					</to>
+				</fsa_trans>
+				<fsa_trans>
+					<input>1</input>
+					<from>
+						<name>onderaan bij 1</name>
+						<id>5</id>
+					</from>
+					<to>
+						<name>fib n</name>
+						<id>0</id>
+					</to>
+				</fsa_trans>
+			</structure>
+		</structure>
+		<state_point_map>
+			<state_point>
+				<state>0</state>
+				<point>
+					<x>280.0</x>
+					<y>211.0</y>
+				</point>
+			</state_point>
+			<state_point>
+				<state>1</state>
+				<point>
+					<x>105.0</x>
+					<y>244.0</y>
+				</point>
+			</state_point>
+			<state_point>
+				<state>2</state>
+				<point>
+					<x>441.0</x>
+					<y>249.0</y>
+				</point>
+			</state_point>
+			<state_point>
+				<state>4</state>
+				<point>
+					<x>224.0</x>
+					<y>372.0</y>
+				</point>
+			</state_point>
+			<state_point>
+				<state>5</state>
+				<point>
+					<x>349.0</x>
+					<y>373.0</y>
+				</point>
+			</state_point>
+		</state_point_map>
+		<control_point_map>
+			<control_point>
+				<from>0</from>
+				<to>1</to>
+				<point>
+					<x>195.48768139699376</x>
+					<y>243.34376498405783</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>2</to>
+				<point>
+					<x>364.20366522958955</x>
+					<y>214.30815521147593</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>4</to>
+				<point>
+					<x>267.22812185329343</x>
+					<y>296.7967380359281</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>1</from>
+				<to>0</to>
+				<point>
+					<x>189.51231860300624</x>
+					<y>211.65623501594214</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>2</from>
+				<to>0</to>
+				<point>
+					<x>356.79633477041045</x>
+					<y>245.69184478852407</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>4</from>
+				<to>0</to>
+				<point>
+					<x>236.7718781467066</x>
+					<y>286.2032619640719</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>5</from>
+				<to>0</to>
+				<point>
+					<x>299.666453386751</x>
+					<y>298.31799207601347</y>
+				</point>
+			</control_point>
+			<control_point>
+				<from>0</from>
+				<to>5</to>
+				<point>
+					<x>329.333546613249</x>
+					<y>285.68200792398653</y>
+				</point>
+			</control_point>
+		</control_point_map>
+	</structure>
+	<state_label_map/>
+	<note_map/>
+</structure>
